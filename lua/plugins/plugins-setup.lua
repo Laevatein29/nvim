@@ -18,22 +18,28 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
+  -- packer async
   use 'wbthomason/packer.nvim'
+  -- theme
   use 'folke/tokyonight.nvim'
+  -- lualine （status bar）
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-
+  -- nvim tree （file route reader）
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
-      'nvim-tree/nvim-web-devicons', -- optional
+      'nvim-tree/nvim-web-devicons', 
     },
   }
-
+  -- nvim terminal management tool 
   use("christoomey/vim-tmux-navigator")
-
+  -- hightlight words
+  use("nvim-treesitter/nvim-treesitter")
+  -- ts rainbow 
+  use "p00f/nvim-ts-rainbow"  
   if packer_bootstrap then
     require('packer').sync()
   end
