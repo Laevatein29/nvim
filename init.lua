@@ -10,7 +10,7 @@ require("plugins.plugins-setup")
 -- use plugins
 require("plugins.lualine")
 require("plugins/nvim-tree")
---require("plugins/treesitter")
+require("plugins/tree-sitter")
 --require("plugins/lsp")
 --require("plugins/cmp")
 --require("plugins/comment")
