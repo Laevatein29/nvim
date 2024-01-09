@@ -50,17 +50,16 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
   use "hrsh7th/cmp-path" -- file routers
-
   use "numToStr/Comment.nvim" -- comment of gcc and gc
   use "windwp/nvim-autopairs" -- auto complete brackets
-
-  use "akinsho/bufferline.nvim" -- buffer divider
+  use "windwp/nvim-ts-autotag" -- auto tag
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}-- buffer divider
   use "lewis6991/gitsigns.nvim" -- git signs
 
   use "yamatsum/nvim-cursorline"
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- search doc
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',  -- search doc
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
