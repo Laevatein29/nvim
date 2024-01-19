@@ -12,7 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-
+-- 在 init.lua 中启用自动跳转
 require 'base'
 require 'neovide'
 require 'keymap'

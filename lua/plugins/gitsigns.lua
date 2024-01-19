@@ -2,6 +2,7 @@ return {
   'lewis6991/gitsigns.nvim',
   config = function()
     require('gitsigns').setup {
+      -- gitsigns
       signs = {
         add = { hl = 'GitSignsAdd', text = '+' },
         change = { hl = 'GitSignsChange', text = '~' },
@@ -10,7 +11,6 @@ return {
         changedelete = { hl = 'GitSignsChange', text = '~' },
       },
       keymaps = {
-        -- 配置快捷键
         noremap = true,
         buffer = true,
       },

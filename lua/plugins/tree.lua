@@ -41,9 +41,6 @@ return {
           enable = true,
           update_cwd = true,
         },
-        git = {
-          enable = false,
-        },
         diagnostics = {
           enable = true,
           show_on_dirs = true,
