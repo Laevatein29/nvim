@@ -18,7 +18,6 @@ return {
             nowait = true,
           }
         end
-
         -- default mappings
         api.config.mappings.default_on_attach(bufnr)
 
