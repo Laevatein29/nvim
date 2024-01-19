@@ -17,6 +17,9 @@
 vim.g.mapleader = ' '
 local keymap = vim.keymap
 
+-- terminal mode
+vim.api.nvim_set_keymap('t', 'qt', '<C-\\><C-n>', { noremap = true })
+
 -- insert mode
 keymap.set('i', 'jk', '<ESC>')
 
