@@ -5,7 +5,6 @@ return {
     config = function()
       vim.g.loaded_netrw = 1
       vim.g.loaded_netrwPlugin = 1
-
       local api = require 'nvim-tree.api'
       vim.keymap.set('n', '<c-e>', api.tree.toggle)
 
@@ -37,7 +36,7 @@ return {
           custom = { '^.git$' },
         },
         actions = {
-          open_file = { quit_on_open = true },
+          open_file = { quit_on_open = false },
         },
         update_focused_file = {
           enable = true,
