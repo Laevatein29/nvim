@@ -11,7 +11,6 @@
 --
 -- keymap.set('n', 'j', [[v:count?'j':'gj']], { noremap = true, expr = true })
 -- keymap.set('n', 'k', [[v:count?'k':'gk']], { noremap = true, expr = true })
---
 -- keymap.set('n', '<leader>nh', ':nohl<CR>', { desc = 'Clear search highlights' })
 
 vim.g.mapleader = ' '
@@ -32,6 +31,7 @@ keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 -- window
 keymap.set('n', '<leader>sv', '<C-w>v')
 keymap.set('n', '<leader>sh', '<C-w>s')
+keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 
 -- Better window movement
 vim.api.nvim_set_keymap(
@@ -74,4 +74,3 @@ vim.api.nvim_set_keymap(
 --   { noremap = true, silent = true }
 -- )
 -- --open nvim-tree
-keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
