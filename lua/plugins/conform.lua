@@ -7,6 +7,7 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         javascript = { 'prettierd' },
+        vue = { 'prettierd' },
         typescript = { 'prettierd' },
         javascriptreact = { 'prettierd' },
         typescriptreact = { 'prettierd' },
@@ -19,7 +20,7 @@ return {
       },
 
       format_on_save = {
-        pattern = '.lua,*.graphql,*.css,*.html,*.json,*.yaml,*.md,*.gql,*.rs',
+        pattern = '.lua,*.graphql,*.css,*.html,*.json,*.yaml,*.md,*.gql,*.rs, *.vue',
         timeout_ms = 500,
         async = false,
         lsp_fallback = true,
