@@ -11,24 +11,31 @@ if not vim.loop.fs_stat(lazypath) then
   }
 end
 
-
-vim.api.nvim_command('set iskeyword-=_')
+vim.api.nvim_command 'set iskeyword-=_'
 
 vim.opt.rtp:prepend(lazypath)
 -- 设置背景透明
-vim.cmd('highlight Normal guibg=none')
-vim.cmd('highlight NonText guibg=none')
-vim.cmd('highlight SignColumn guibg=none')
-vim.cmd('highlight LineNr guibg=none')
-vim.cmd('highlight CursorLineNr guibg=none')
-vim.cmd('highlight EndOfBuffer guibg=none')
-vim.cmd('highlight VertSplit guibg=none')
-vim.cmd('highlight StatusLine guibg=none')
-vim.cmd('highlight StatusLineNC guibg=none')
-vim.cmd('highlight FoldColumn guibg=none')
--- 设置补全下拉框透明
-vim.cmd('highlight Pmenu guibg=none')
-vim.cmd('highlight PmenuSel guibg=#4b5263')
+-- vim.cmd('highlight Normal guibg=none')
+-- vim.cmd('highlight NonText guibg=none')
+-- vim.cmd('highlight SignColumn guibg=none')
+-- vim.cmd('highlight LineNr guibg=none')
+-- vim.cmd('highlight CursorLineNr guibg=none')
+-- vim.cmd('highlight EndOfBuffer guibg=none')
+-- vim.cmd('highlight VertSplit guibg=none')
+-- vim.cmd('highlight StatusLine guibg=none')
+-- vim.cmd('highlight StatusLineNC guibg=none')
+-- vim.cmd('highlight FoldColumn guibg=none')
+--
+-- -- 设置所有窗口的背景透明
+-- vim.cmd('highlight Normal guibg=NONE ctermbg=NONE')
+-- vim.cmd('highlight SignColumn guibg=NONE ctermbg=NONE')
+-- vim.cmd('highlight VertSplit guibg=NONE ctermbg=NONE')
+-- vim.cmd('highlight StatusLine guibg=NONE ctermbg=NONE')
+-- vim.cmd('highlight StatusLineNC guibg=NONE ctermbg=NONE')
+-- vim.cmd('highlight FoldColumn guibg=NONE ctermbg=NONE')
+-- -- 设置补全下拉框透明
+-- vim.cmd('highlight Pmenu guibg=none')
+-- vim.cmd('highlight PmenuSel guibg=#4b5263')
 -- 在 init.lua 中启用自动跳转
 require 'base'
 require 'neovide'

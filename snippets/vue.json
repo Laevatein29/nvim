@@ -97,5 +97,28 @@
       "}",
       "</style>"
     ]
+  },
+  "Uni Vue Setup": {
+    "prefix": 'uvs',
+    "description": "Uni Vue Setup",
+    "body": [
+      "<script lang='ts' setup>",
+      "import { useNamespace } from '@/hooks/useNamespace'",
+      "const cls = useNamespace('page')",
+      "</script>",
+      "",
+      "<template>",
+      "  <div :class="cls.e('container')>",
+      "  </div>",
+      "</template>",
+      "",
+      "<style lang='scss' scoped>",
+      "$cls: page;",
+      ".#{$cls} {",
+      "   &__container {",
+      "   }",
+      "}",
+      "</style>"
+    ]
   }
 }

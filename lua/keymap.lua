@@ -12,7 +12,7 @@
 -- keymap.set('n', 'j', [[v:count?'j':'gj']], { noremap = true, expr = true })
 -- keymap.set('n', 'k', [[v:count?'k':'gk']], { noremap = true, expr = true })
 -- keymap.set('n', '<leader>nh', ':nohl<CR>', { desc = 'Clear search highlights' })
-
+--
 vim.g.mapleader = ' '
 local keymap = vim.keymap
 
@@ -30,7 +30,9 @@ keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 -- normal mode
 -- window
 keymap.set('n', '<leader>sv', '<C-w>v')
+keymap.set('n', '<leader>ss', '<C-w>s; :resize -25<CR>')
 keymap.set('n', '<leader>sh', '<C-w>s')
+
 keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 
 -- Better window movement
