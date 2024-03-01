@@ -36,43 +36,7 @@ keymap.set('n', '<leader>sh', '<C-w>s')
 keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 
 -- Better window movement
-vim.api.nvim_set_keymap(
-  'n',
-  '<C-h>',
-  '<C-w>h',
-  { noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  'n',
-  '<C-j>',
-  '<C-w>j',
-  { noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  'n',
-  '<C-k>',
-  '<C-w>k',
-  { noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  'n',
-  '<C-l>',
-  '<C-w>l',
-  { noremap = true, silent = true }
-)
--- switch to next buffer
--- vim.api.nvim_set_keymap(
---   'n',
---   '<leader>l',
---   ':bnext<CR>',
---   { noremap = true, silent = true }
--- )
---
--- -- switch to previous buffer
--- vim.api.nvim_set_keymap(
---   'n',
---   '<leader>h',
---   ':bprevious<CR>',
---   { noremap = true, silent = true }
--- )
--- --open nvim-tree
+keymap.set('n', '<leader>eh', '<C-w>h')
+keymap.set('n', '<leader>ej', '<C-w>j')
+keymap.set('n', '<leader>ek', '<C-w>k')
+keymap.set('n', '<leader>el', '<C-w>l')

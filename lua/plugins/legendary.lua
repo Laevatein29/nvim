@@ -40,12 +40,6 @@ return {
         '<leader>d',
         '<CMD>Telescope neovim-project discover<CR>',
       },
-      {
-        description = 'select a project from your recent history',
-        mode = { 'n' },
-        '<leader>h',
-        '<CMD>Telescope neovim-project history<CR>',
-      },
     }
   end,
 }
