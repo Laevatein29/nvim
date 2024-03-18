@@ -1,10 +1,19 @@
 -- everforest
 return {
-  'sainnhe/everforest',
+  -- 'folke/tokyonight.nvim',
+  'mcchrish/zenbones.nvim',
+  dependencies = {
+    'rktjmp/lush.nvim',
+  },
+  lazy = false,
   priority = 1000,
+  opts = {},
   config = function()
-    vim.g.everforest_diagnostic_line_highlight = 1
-    vim.cmd [[colorscheme everforest]]
+    -- require 'rktjmp/lush.nvim'
+    vim.opt.termguicolors = true
+    vim.opt.background = 'dark'
+    -- vim.cmd [[colorscheme tokyonight-moon]]
+    vim.cmd [[colorscheme forestbones]]
   end,
 }
 --

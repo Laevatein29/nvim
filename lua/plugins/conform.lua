@@ -12,6 +12,8 @@ return {
         javascriptreact = { 'prettierd' },
         typescriptreact = { 'prettierd' },
         css = { 'prettierd' },
+        scss = { 'prettierd' },
+        less = { 'prettierd' },
         html = { 'prettierd' },
         json = { 'prettierd' },
         yaml = { 'prettierd' },
@@ -20,7 +22,7 @@ return {
       },
 
       format_on_save = {
-        pattern = '.lua,*.graphql,*.css,*.html,*.json,*.yaml,*.md,*.gql,*.rs, *.vue',
+        pattern = '.lua,*.graphql,*.css,*.html,*.json,*.yaml,*.md,*.gql,*.rs, *.vue, *.scss, *.less',
         timeout_ms = 500,
         async = false,
         lsp_fallback = true,

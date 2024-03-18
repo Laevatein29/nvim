@@ -10,7 +10,9 @@
       },
       {
         "language": [
-          "vue"
+          "vue",
+          "typescript",
+          "javascript"
         ],
         "path": "./vue.json"
       }
