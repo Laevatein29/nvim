@@ -1,0 +1,37 @@
+extends html, javascript, css
+
+snippet v2t "vue 2 with typescript" b
+<template>
+	<div class="${1}"></div>
+</template>
+
+<script lang="ts">
+export default {
+	name: '${1}',
+
+	props: {
+		item: {
+			type: Object,
+			required: true,
+		},
+	},
+
+	data() {
+		return {}
+	},
+
+	mounted() {}
+
+	computed: {},
+
+	methods: {},
+}
+</script>
+<style lang="scss" scoped>
+</style>
+endsnippet
+
+snippet scss "scss in vue2 stype tag" b
+<style lang="scss" scope>
+<style>
+endsnippet

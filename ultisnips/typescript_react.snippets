@@ -1,0 +1,17 @@
+extends javascript, typescript
+
+snippet cws "Components with css module" b
+import style from './index.module.scss'
+
+export default function ${1}() {
+	return (
+		<div className={style.container}>
+			Index
+		</div>
+	)
+}
+endsnippet
+
+snippet ews "className with css module" b
+<div className={style.container}>
+endsnippet

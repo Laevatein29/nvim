@@ -1,0 +1,13 @@
+snippet jsfor "Description" b
+for (let ${1:index} = 0; ${1:index} < ${2: array}.length; ${1:index}++) {
+	const element = ${2:array}[${1:index}];
+}
+endsnippet
+
+snippet vlog "variable log" b
+	console.log('${1}', ${1})
+endsnippet
+
+snippet log "normal log" b
+	console.log(${1: variable})
+endsnippet
