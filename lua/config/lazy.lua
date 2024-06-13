@@ -9,17 +9,18 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup({
 	spec = {
 		-- add LazyVim and import its plugins
-		{ "Laevatein29/LazyVim", import = "lazyvim.plugins" },
+		{ "Lazyvim/LazyVim", import = "lazyvim.plugins" },
 		-- import any extras modules here
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
+		{ import = "lazyvim.plugins.extras.lang.vue" },
 		{ import = "lazyvim.plugins.extras.linting.eslint" },
 		{ import = "lazyvim.plugins.extras.ui.mini-indentscope" },
-		{ import = "lazyvim.plugins.extras.lsp.mason-lspconfig" },
-		{ import = "lazyvim.plugins.extras.tools.markdown-preview" },
-		{ import = "lazyvim.plugins.extras.tools.gitsigns" },
-		{ import = "lazyvim.plugins.extras.tools.barbar" },
-		{ import = "lazyvim.plugins.extras.tools.hardtime" },
-		{ import = "lazyvim.plugins.extras.tools.coc" },
+		-- { import = "lazyvim.plugins.extras.lsp.mason-lspconfig" },
+		-- { import = "lazyvim.plugins.extras.tools.markdown-preview" },
+		-- { import = "lazyvim.plugins.extras.tools.gitsigns" },
+		-- { import = "lazyvim.plugins.extras.tools.barbar" },
+		-- { import = "lazyvim.plugins.extras.tools.hardtime" },
+		-- { import = "lazyvim.plugins.extras.tools.coc" },
 		-- import/override with your plugindependencies s
 		{ import = "plugins" },
 	},
