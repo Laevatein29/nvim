@@ -22,6 +22,7 @@ vim.api.nvim_create_user_command(
   FixAll, -- Lua
   { nargs = "?" } --
 )
+-- TODO: add eslint fix fun
 
 -- vim.api.nvim_create_autocmd("BufWrite", {
 --   pattern = {
