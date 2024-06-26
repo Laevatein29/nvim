@@ -1,3 +1,4 @@
+-- use customed vue config for locking volar version
 return {
   { import = "astrocommunity.pack.typescript" },
   {

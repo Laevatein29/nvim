@@ -1,27 +1,20 @@
-local function has_eslint_config()
-  for _, config_file in ipairs { ".eslintrc.js", ".eslintrc.json", ".eslintrc", ".eslintrc.yaml", ".eslintrc.yml" } do
-    if vim.fn.filereadable(config_file) == 1 then
-      vim.api.nvim_command "echo 'eslint!'"
-      return true
-    else
-      return false
-    end
+local function FixAll()
+    local eslint_exists = vim.fn.exists(":EslintFixAll") > 0
+  if eslint_exists then
+    vim.api.nvim_command(":EslintFixAll")
+    vim.api.nvim_command "echo 'Eslint Fixed!'"
+  else
+    vim.api.nvim_command "echo 'Eslint config is not found!'"
   end
 end
 
-local function FixAll()
-  if has_eslint_config() then
-    vim.api.nvim_command "echo 'Hello!'"
-  else
-    vim.api.nvim_command "echo 'eslint config not found!'"
-  end
-end
 
 vim.api.nvim_create_user_command(
   "FixAll", --
   FixAll, -- Lua
   { nargs = "?" } --
 )
+
 -- TODO: add eslint fix fun
 
 -- vim.api.nvim_create_autocmd("BufWrite", {
@@ -35,22 +28,23 @@ vim.api.nvim_create_user_command(
 --   },
 --   command = ":FixAll",
 -- })
--- vim.api.nvim_create_autocmd("BufWritePre", {
---   pattern = {
---     "*.vue",
---     "*.js",
---     "*.ts",
---     "*.jsx",
---     "*.tsx",
---     "*.mjs",
---   },
---   command = ":EslintFixAll",
--- })
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = {
+    "*.vue",
+    "*.js",
+    "*.ts",
+    "*.jsx",
+    "*.tsx",
+    "*.mjs",
+  },
+  command = ":FixAll",  
+})
 --
 -- Disable autoformat for lua files
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = {
     "vue",
+    "lua",
     "javascript",
     "javascriptreact",
     "javascript.jsx",
