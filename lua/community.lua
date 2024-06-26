@@ -8,7 +8,5 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  -- { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.vue" },
   -- import/override with your plugins folder
 }

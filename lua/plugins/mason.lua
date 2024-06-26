@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -9,8 +11,6 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        -- WARN: lock volar version to ensure @vue/typescript-plugin is working
-        "volar@1.8.27",
         -- add more arguments for adding more language servers
       },
     },

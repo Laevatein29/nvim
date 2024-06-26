@@ -1,3 +1,39 @@
+local function has_eslint_config()
+  for _, config_file in ipairs { ".eslintrc.js", ".eslintrc.json", ".eslintrc", ".eslintrc.yaml", ".eslintrc.yml" } do
+    if vim.fn.filereadable(config_file) == 1 then
+      vim.api.nvim_command "echo 'eslint!'"
+      return true
+    else
+      return false
+    end
+  end
+end
+
+local function FixAll()
+  if has_eslint_config() then
+    vim.api.nvim_command "echo 'Hello!'"
+  else
+    vim.api.nvim_command "echo 'eslint config not found!'"
+  end
+end
+
+vim.api.nvim_create_user_command(
+  "FixAll", --
+  FixAll, -- Lua
+  { nargs = "?" } --
+)
+
+-- vim.api.nvim_create_autocmd("BufWrite", {
+--   pattern = {
+--     "*.vue",
+--     "*.js",
+--     "*.ts",
+--     "*.jsx",
+--     "*.tsx",
+--     "*.mjs",
+--   },
+--   command = ":FixAll",
+-- })
 -- vim.api.nvim_create_autocmd("BufWritePre", {
 --   pattern = {
 --     "*.vue",
