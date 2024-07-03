@@ -50,6 +50,7 @@ return {
         "vim",
         "vimdoc",
         "scss",
+        "css",
       },
       highlight = { enable = true },
       incremental_selection = { enable = true },

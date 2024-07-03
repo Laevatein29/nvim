@@ -8,6 +8,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.colorscheme.everforest" },
   -- { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   -- import/override with your plugins folder
 }

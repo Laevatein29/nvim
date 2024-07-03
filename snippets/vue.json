@@ -2,21 +2,55 @@
   "setup": {
     "prefix": [
       "setup",
-      "template"
+      "template",
+      "vst"
     ],
     "body": [
       "<script lang=\"ts\" setup>",
-      "\t$2",
+      "",
       "</script>",
       "",
       "<template>",
-      "\t$1",
+      "\t<div>page</div>",
       "</template>",
       "",
-      "<style lang=\"scss\">",
-      "\t$3",
-      "</style>",
-      ""
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "My standard setup Vue3 + TS"
+  },
+  "vue-class-name": {
+    "prefix": [
+      "vcn"
+    ],
+    "body": [
+      "div[:class=\"cls.b('$1')\"]>$2{}"
+    ],
+    "description": "My standard setup Vue3 + TS"
+  },
+  "vue-props-data": {
+    "prefix": [
+      "vpd"
+    ],
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "interface Props {",
+      "  value: string",
+      "}",
+      "",
+      "const props = defineProps<Props>()",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>",
+      "    {{ props.value }}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
     ],
     "description": "My standard setup Vue3 + TS"
   }
