@@ -1,4 +1,28 @@
 {
+  "nuxt-2-ts": {
+    "prefix": [
+      "n2t"
+    ],
+    "body": [
+      "<script lang=\"ts\">",
+      "import Vue from 'vue'",
+      "",
+      "export default Vue.extend({",
+      "\tname: '$1',",
+      "})",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div :class=\"\\$style.container\"></div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" module>",
+      ".container {",
+      "\twidth: 100%;",
+      "}",
+      "</style>"
+    ]
+  },
   "setup": {
     "prefix": [
       "setup",

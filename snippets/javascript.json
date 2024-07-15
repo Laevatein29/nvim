@@ -1,0 +1,10 @@
+{
+  "variable-console-log": {
+    "prefix": [
+      "vlog"
+    ],
+    "body": [
+      "console.log('$1 :', $1)"
+    ]
+  }
+}

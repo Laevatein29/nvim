@@ -8,7 +8,11 @@
       {
         "language": "vue",
         "path": "./vue.json"
-      }, 
+      },
+      {
+        "language": "vue",
+        "path": "./javascript.json"
+      },
       {
         "language": "typescriptreact",
         "path": "./tsx.json"
