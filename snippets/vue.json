@@ -23,6 +23,38 @@
       "</style>"
     ]
   },
+  "nuxt-2-decorator": {
+    "prefix": [
+      "n2d"
+    ],
+    "body": [
+      "<script lang=\"ts\">",
+      "import { Component, Inject, Vue } from 'nuxt-property-decorator'",
+      "",
+      "import type { UseNamespace } from '~/types'",
+      "",
+      "@Component",
+      "export default class Page extends Vue {",
+      "\t@Inject() useNamespace!: UseNamespace",
+      "\tcls = this.useNamespace('$1')",
+      "}",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div :class=\"cls.b('container')\"></div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "\\$cls: $1;",
+      "",
+      ".#{\\$cls} {",
+      "\t&-container {",
+      "\t\twidth: 100%;",
+      "\t}",
+      "}",
+      "</style>"
+    ]
+  },
   "setup": {
     "prefix": [
       "setup",

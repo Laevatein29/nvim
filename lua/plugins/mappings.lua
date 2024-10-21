@@ -10,6 +10,8 @@ return {
           -- second key is the lefthand side of the map
           -- mappings seen under group name "Buffer"
           -- ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+          ["<Leader>1to"] = { "<Cmd>ToggleTerm 1<CR>", desc = "TerminalToggle1" },
+          ["<Leader>2to"] = { "<Cmd>ToggleTerm 2<CR>", desc = "TerminalToggle2" },
           ["<Leader>bc"] = { "<Cmd>BufferClose<CR>", desc = "BufferClose" },
           ["<Leader>sv"] = { "<C-w>v", desc = "vertical" },
           ["<Leader>sh"] = { "<C-w>s", desc = "horizon" },
@@ -19,7 +21,7 @@ return {
           ["<Leader>el"] = { "<C-w>l", desc = "move l" },
           ["<Leader>tt"] = { "<Cmd>NvimTreeToggle<CR>", desc = "Toggle Explorer" },
           -- ["<Leader>tt"] = { "<Cmd>Neotree toggle<CR>", desc = "Toggle Explorer" },
-          ["<Leader>ft"] = { "<Cmd>ToggleTerm direction=float<CR>", desc = "ToggleTerm float" },
+          -- ["<Leader>ft"] = { "<Cmd>ToggleTerm direction=float<CR>", desc = "ToggleTerm float" },
           ["<Leader>fc"] = {
             function() builtin.colorscheme { enable_preview = true, ignore_builtins = true } end,
           },
@@ -47,6 +49,10 @@ return {
           -- setting a mapping to false will disable it
           -- ["<esc>"] = false,
           ["qt"] = { "<C-\\><C-n>", noremap = true, desc = "quit terminal mode" },
+        },
+        i = {
+          ["<C-j>"] = { "<C-n>", expr = true },
+          ["<C-k>"] = { "<C-p>", expr = true },
         },
       },
     },

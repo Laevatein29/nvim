@@ -1,3 +1,5 @@
+-- if true then return {} end
+
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = {
     "*.vue",
@@ -23,6 +25,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   },
   callback = function() vim.b.autoformat = false end,
 })
+
 return {
   {
     "Laevatein29/scripts.nvim",
@@ -30,6 +33,6 @@ return {
       "stevearc/dressing.nvim",
       "nvim-telescope/telescope.nvim",
     },
-    cmd = { "ShowAuthor", "FixAll" },
+    cmd = { "ShowAuthor", "ShowTodo", "FixAll" },
   },
 }

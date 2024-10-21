@@ -6,12 +6,17 @@
   "contributes": {
     "snippets": [
       {
-        "language": "vue",
-        "path": "./vue.json"
+        "language": [
+          "typescript",
+          "javascript",
+          "typescriptreact",
+          "vue"
+        ],
+        "path": "./javascript.json"
       },
       {
         "language": "vue",
-        "path": "./javascript.json"
+        "path": "./vue.json"
       },
       {
         "language": "typescriptreact",
