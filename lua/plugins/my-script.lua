@@ -33,6 +33,6 @@ return {
       "stevearc/dressing.nvim",
       "nvim-telescope/telescope.nvim",
     },
-    cmd = { "ShowAuthor", "ShowTodo", "FixAll" },
+    cmd = { "ShowAuthor", "ShowTodo", "FixAll", "Check1024" },
   },
 }
