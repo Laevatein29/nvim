@@ -7,12 +7,23 @@ return {
       mappings = {
         -- first key is the mode
         n = {
+          ["<Leader>bp"] = { "<Cmd>BufferPrevious<CR>", desc = "BufferPrevious" },
+          ["<Leader>bn"] = { "<Cmd>BufferNext<CR>", desc = "BufferNext" },
+          ["<Leader>b1"] = { "<Cmd>BufferGoto 1<CR>", desc = "BufferGoto 1" },
+          ["<Leader>b2"] = { "<Cmd>BufferGoto 2<CR>", desc = "BufferGoto 2" },
+          ["<Leader>b3"] = { "<Cmd>BufferGoto 3<CR>", desc = "BufferGoto 3" },
+          ["<Leader>b4"] = { "<Cmd>BufferGoto 4<CR>", desc = "BufferGoto 4" },
+          ["<Leader>b5"] = { "<Cmd>BufferGoto 5<CR>", desc = "BufferGoto 5" },
+          ["<Leader>b6"] = { "<Cmd>BufferGoto 6<CR>", desc = "BufferGoto 6" },
+          ["<Leader>b7"] = { "<Cmd>BufferGoto 7<CR>", desc = "BufferGoto 7" },
+          ["<Leader>b8"] = { "<Cmd>BufferGoto 8<CR>", desc = "BufferGoto 8" },
+          ["<Leader>b9"] = { "<Cmd>BufferGoto 9<CR>", desc = "BufferGoto 9" },
+          ["<Leader>bc"] = { "<Cmd>BufferClose<CR>", desc = "BufferClose" },
           -- second key is the lefthand side of the map
           -- mappings seen under group name "Buffer"
           -- ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
           ["<Leader>1to"] = { "<Cmd>ToggleTerm 1<CR>", desc = "TerminalToggle1" },
           ["<Leader>2to"] = { "<Cmd>ToggleTerm 2<CR>", desc = "TerminalToggle2" },
-          ["<Leader>bc"] = { "<Cmd>BufferClose<CR>", desc = "BufferClose" },
           ["<Leader>sv"] = { "<C-w>v", desc = "vertical" },
           ["<Leader>sh"] = { "<C-w>s", desc = "horizon" },
           ["<Leader>eh"] = { "<C-w>h", desc = "move h" },

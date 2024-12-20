@@ -8,12 +8,17 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  -- { import = "astrocommunity.colorscheme.everforest" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  -- color schemes
+  { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.miasma-nvim" },
   { import = "astrocommunity.colorscheme.nord-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.bamboo-nvim" },
-  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.colorscheme.aurora" },
+  { import = "astrocommunity.colorscheme.bluloco-nvim" },
   -- { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   -- import/override with your plugins folder
+  -- image
+  { import = "astrocommunity.media.image-nvim" },
 }
