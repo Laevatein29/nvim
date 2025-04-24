@@ -21,6 +21,13 @@ return {
           error = "",
         },
       },
+      filters = {
+        dotfiles = false, -- show dotfiles
+        custom = {}, -- no customed filters
+      },
+      git = {
+        ignore = false, -- show git ignore files
+      },
     }
   end,
 }

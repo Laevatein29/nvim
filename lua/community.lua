@@ -17,8 +17,9 @@ return {
   { import = "astrocommunity.colorscheme.bamboo-nvim" },
   { import = "astrocommunity.colorscheme.aurora" },
   { import = "astrocommunity.colorscheme.bluloco-nvim" },
+  { import = "astrocommunity.colorscheme.kanagawa-paper-nvim" },
+
   -- { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   -- import/override with your plugins folder
   -- image
-  { import = "astrocommunity.media.image-nvim" },
 }
