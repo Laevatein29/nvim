@@ -1,8 +1,6 @@
 {
   "nuxt-2-ts": {
-    "prefix": [
-      "n2t"
-    ],
+    "prefix": ["n2t"],
     "body": [
       "<script lang=\"ts\">",
       "import Vue from 'vue'",
@@ -24,9 +22,7 @@
     ]
   },
   "nuxt-2-decorator": {
-    "prefix": [
-      "n2d"
-    ],
+    "prefix": ["n2d"],
     "body": [
       "<script lang=\"ts\">",
       "import { Component, Inject, Vue } from 'nuxt-property-decorator'",
@@ -56,11 +52,7 @@
     ]
   },
   "setup": {
-    "prefix": [
-      "setup",
-      "template",
-      "vst"
-    ],
+    "prefix": ["setup", "template", "vst"],
     "body": [
       "<script lang=\"ts\" setup>",
       "",
@@ -77,18 +69,12 @@
     "description": "My standard setup Vue3 + TS"
   },
   "vue-class-name": {
-    "prefix": [
-      "vcn"
-    ],
-    "body": [
-      "div[:class=\"cls.b('$1')\"]>$2{}"
-    ],
+    "prefix": ["vcn"],
+    "body": ["div[:class=\"cls.b('$1')\"]>$2{}"],
     "description": "My standard setup Vue3 + TS"
   },
   "vue-props-data": {
-    "prefix": [
-      "vpd"
-    ],
+    "prefix": ["vpd"],
     "body": [
       "<script lang=\"ts\" setup>",
       "interface Props {",

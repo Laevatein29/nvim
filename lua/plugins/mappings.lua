@@ -69,11 +69,11 @@ return {
             desc = "Hover symbol details",
           },
           -- condition for only server with declaration capabilities
-          gD = {
-            function() vim.lsp.buf.declaration() end,
-            desc = "Declaration of current symbol",
-            cond = "textDocument/declaration",
-          },
+          -- gD = {
+          --   function() vim.lsp.buf.declaration() end,
+          --   desc = "Declaration of current symbol",
+          --   cond = "textDocument/declaration",
+          -- },
         },
       },
     },

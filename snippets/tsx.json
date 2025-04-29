@@ -1,28 +1,6 @@
 {
-  "for loop for js": {
-    "prefix": [
-      "jsfor"
-    ],
-    "body": [
-      "for (let ${1:index} = 0; ${1:index} < ${2: array}.length; ${1:index}++) {",
-      "\tconst element = ${2:array}[${1:index}];",
-      "}"
-    ]
-  },
-  "variable console log": {
-    "prefix": [
-      "vlog"
-    ],
-    "body": [
-      "console.log('${1} =>>', ${1})"
-    ]
-  },
-  "variable normal log": {
-    "prefix": [
-      "nlog"
-    ],
-    "body": [
-      "console.log(${1: variable})"
-    ]
+  "enum-as-const": {
+    "prefix": ["enum"],
+    "body": ["as const"]
   }
 }
