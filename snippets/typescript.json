@@ -1,0 +1,6 @@
+{
+  "enum-as-const": {
+    "prefix": ["enum"],
+    "body": ["as const"]
+  }
+}
