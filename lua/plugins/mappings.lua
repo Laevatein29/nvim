@@ -10,6 +10,7 @@ return {
           -- second key is the lefthand side of the map
           -- mappings seen under group name "Buffer"
           -- ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+          -- ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
           ["<Leader>1to"] = { "<Cmd>ToggleTerm 1<CR>", desc = "TerminalToggle1" },
           ["<Leader>2to"] = { "<Cmd>ToggleTerm 2<CR>", desc = "TerminalToggle2" },
           ["<Leader>bc"] = { "<Cmd>BufferClose<CR>", desc = "BufferClose" },
