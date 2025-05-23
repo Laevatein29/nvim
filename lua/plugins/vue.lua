@@ -84,7 +84,7 @@ return {
     opts = function(_, opts)
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         -- WARN: lock volar version to ensure @vue/typescript-plugin is working
-        "volar@1.8.27",
+        "vue-language-server@1.8.27",
       })
     end,
   },
