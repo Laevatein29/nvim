@@ -21,6 +21,7 @@ return {
           ["<Leader>ek"] = { "<C-w>k", desc = "move k" },
           ["<Leader>el"] = { "<C-w>l", desc = "move l" },
           ["<Leader>tt"] = { "<Cmd>NvimTreeToggle<CR>", desc = "Toggle Explorer" },
+          ["<Leader>tf"] = { "<Cmd>ToggleTerm<CR>", desc = "Toggle Term" },
           -- ["<Leader>tt"] = { "<Cmd>Neotree toggle<CR>", desc = "Toggle Explorer" },
           -- ["<Leader>ft"] = { "<Cmd>ToggleTerm direction=float<CR>", desc = "ToggleTerm float" },
           ["<Leader>fc"] = {

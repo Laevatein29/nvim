@@ -1,4 +1,8 @@
 -- use customed vue config for locking volar version
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "vue",
+  callback = function() vim.opt_local.commentstring = "<!--%s-->" end,
+})
 return {
   { import = "astrocommunity.pack.typescript" },
   {

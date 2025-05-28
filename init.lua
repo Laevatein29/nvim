@@ -5,6 +5,11 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
   -- stylua: ignore
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
+-- -- Lua
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "vue",
+--   callback = function() vim.opt_local.commentstring = "<!--%s-->" end,
+-- })
 vim.opt.rtp:prepend(lazypath)
 -- validate that lazy is available
 if not pcall(require, "lazy") then
