@@ -1,0 +1,99 @@
+{
+  "nuxt-2-ts": {
+    "prefix": ["n2t"],
+    "body": [
+      "<script lang=\"ts\">",
+      "import Vue from 'vue'",
+      "",
+      "export default Vue.extend({",
+      "\tname: '$1',",
+      "})",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div :class=\"\\$style.container\"></div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" module>",
+      ".container {",
+      "\twidth: 100%;",
+      "}",
+      "</style>"
+    ]
+  },
+  "nuxt-2-decorator": {
+    "prefix": ["n2d"],
+    "body": [
+      "<script lang=\"ts\">",
+      "import { Component, Inject, Vue } from 'nuxt-property-decorator'",
+      "",
+      "import type { UseNamespace } from '~/types'",
+      "",
+      "@Component",
+      "export default class Page extends Vue {",
+      "\t@Inject() useNamespace!: UseNamespace",
+      "\tcls = this.useNamespace('$1')",
+      "}",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div :class=\"cls.b('container')\"></div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "\\$cls: $1;",
+      "",
+      ".#{\\$cls} {",
+      "\t&-container {",
+      "\t\twidth: 100%;",
+      "\t}",
+      "}",
+      "</style>"
+    ]
+  },
+  "setup": {
+    "prefix": ["setup", "template", "vst"],
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>page</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "My standard setup Vue3 + TS"
+  },
+  "vue-class-name": {
+    "prefix": ["vcn"],
+    "body": ["div[:class=\"cls.b('$1')\"]>$2{}"],
+    "description": "My standard setup Vue3 + TS"
+  },
+  "vue-props-data": {
+    "prefix": ["vpd"],
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "interface Props {",
+      "  value: string",
+      "}",
+      "",
+      "const props = defineProps<Props>()",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>",
+      "    {{ props.value }}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "My standard setup Vue3 + TS"
+  }
+}
