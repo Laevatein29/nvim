@@ -85,11 +85,13 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     optional = true,
-    opts = function(_, opts)
-      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        -- WARN: lock volar version to ensure @vue/typescript-plugin is working
-        "vue-language-server@1.8.27",
-      })
+    opts = function()
+      require("mason-lspconfig").setup {
+        ensure_installed = {
+          "volar@1.8.27",
+          "ts_ls",
+        },
+      }
     end,
   },
   {
