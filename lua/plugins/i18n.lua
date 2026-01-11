@@ -1,3 +1,4 @@
+if true then return {} end
 return {
   dir = "~/coding/scripts/js-i18n-leo",
   dependencies = {

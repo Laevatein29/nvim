@@ -1,10 +1,20 @@
 {
   "variable-console-log": {
-    "prefix": [
-      "vlog"
-    ],
+    "prefix": ["vlog"],
+    "body": ["console.log('$1 :', $1)"]
+  },
+  "async fetch": {
+    "prefix": ["af"],
     "body": [
-      "console.log('$1 :', $1)"
+      "async fetchData() {",
+      "\ttry {",
+      "\t\tconst res = await",
+      "\t} catch (err) {",
+      "\t\tconsole.log('err :', err)",
+      "\t} finally {",
+      "\t\tconsole.log('finally')",
+      "\t}",
+      "}"
     ]
   }
 }
